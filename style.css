@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+} *
+
+body {
+    margin: 1rem 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.top {
+    order: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.secret-number {
+    font-size: 3rem;
+    margin-top: .5rem;
+}
+
+.bot {
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.top :nth-child(1) {
+    order: 2;
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+main form, main section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+main form {
+    align-items: center;
+}
+
+.message {
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 1rem;
+    max-width: 30%;
+    margin-bottom: 0.75rem;
+}
+
+button {
+    padding: 0.25rem 1rem;
+}

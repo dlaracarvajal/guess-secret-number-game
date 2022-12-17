@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Secret Number!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="bot">
+            <h1>Guess The Secret Number!</h1>
+            <p class="secret-number">?</p>
+        </div>
+        <div class="top">
+            <p>(Between 1 and 20)</p>
+            <button class="again">Again!</button>
+        </div>
+    </header>
+
+    <main>
+        <form class="left">
+            <label for="userNumber" class="message">Introduce a number</label>
+            <input type="number" id="userNumber" class="user-number">
+            <button type="submit">Check!</button>
+        </form>
+
+        <section class="right">
+            <p>Score: <span class="score">20</span></p>
+            <p>Highscore: <span>0</span></p>
+        </section>
+    </main>
     
 </body>
 </html>

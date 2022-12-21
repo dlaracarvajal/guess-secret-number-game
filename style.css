@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 } *
 
 body {
-    margin: 1rem 2%;
+    margin: 1rem auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    /* height: 100vh; */
+    min-width: 440px;
+    max-width: 700px;
 }
 
 header {
@@ -27,7 +32,7 @@ header {
 
 .secret-number {
     font-size: 3rem;
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .bot {
@@ -46,30 +51,42 @@ header {
 
 main {
     display: grid;
-    grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main form, main section {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-}
-
-main form {
     align-items: center;
+    min-width: 50%;
 }
 
 .message {
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 input {
     padding: 1rem;
-    max-width: 30%;
+    max-width: 15%;
     margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 button {
     padding: 0.25rem 1rem;
+    cursor: pointer;
 }
